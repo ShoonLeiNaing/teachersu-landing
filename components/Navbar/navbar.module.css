@@ -1,0 +1,25 @@
+.select {
+  width: 62px;
+  font-family: "Poppins", sans-serif;
+  appearance: none;
+  background-image: url("/images/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem top 50%;
+  background-size: 0.65rem auto;
+  background-color: #0f3b7a;
+  padding: 7px;
+  /* padding-right: 20px; */
+  color: white;
+  border-radius: 10px;
+  /* margin-left: 24px; */
+  outline: none;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .select {
+    font-size: 10px;
+    width: 55px;
+    padding: 6px 7px;
+  }
+}
