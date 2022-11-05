@@ -2,15 +2,13 @@ import { Box } from "@mui/material";
 import dynamic from "next/dynamic";
 
 const Layout = dynamic(import("../components/Layout"), { ssr: false });
+const Numbers = dynamic(import("../components/Numbers"), { ssr: false });
 
 export default function Home() {
   return (
     <Layout>
-      <Box height="80vh" sx={{ backgroundColor: "red" }}>
-        jejej
-      </Box>
-      <Box height="80vh" sx={{ backgroundColor: "blue" }}>
-        jejej
+      <Box maxWidth="1200px" margin="auto">
+        <Numbers />
       </Box>
     </Layout>
   );
