@@ -1,0 +1,10 @@
+.footer_image {
+  width: 100vw;
+  min-height: 40px;
+}
+
+@media screen and (max-width: 700px) {
+  .footer_image {
+    min-height: 20px;
+  }
+}
