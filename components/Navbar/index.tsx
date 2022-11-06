@@ -24,6 +24,7 @@ const Navbar: FunctionComponent = () => {
   return (
     <Box
       position="sticky"
+      boxShadow="0 2px 2px 0 rgba(0,0,0,.1)"
       bgcolor="white"
       overflow="hidden"
       top="0"
