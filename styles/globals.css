@@ -33,8 +33,28 @@ input {
   cursor: pointer;
 }
 
+/* swiper start */
+.swiper {
+  padding: 0 10px !important;
+}
+.swiper-wrapper {
+  padding-bottom: 35px;
+}
+.swiper-button-next {
+  margin-right: -10px;
+  content: url("../public/images/rightarrow.svg");
+}
+.swiper-button-prev {
+  margin-left: -10px;
+  content: url("../public/images/leftarrow.svg");
+}
+/* swiper end */
+
 @media screen and (max-width: 600px) {
   body {
     font-size: 14px;
+  }
+  .quote {
+    height: 25px;
   }
 }

@@ -36,7 +36,7 @@ const SuConnect = () => {
           >
             <Image alt="suconnect logo" src="/images/suconnect-logo.svg" fill />
           </Box>
-          <Typography>
+          <Typography fontSize={{ md: "16px", xs: "14px" }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate libero et velit interdum, ac aliquet odio mattis. Class
             aptent taciti sociosqu ad litora torquent per conubia nostra, per
