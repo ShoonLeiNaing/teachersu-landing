@@ -4,7 +4,11 @@ import Title from "../Title";
 
 const Numbers = () => {
   return (
-    <Box py={{ lg: "80px", md: "60px", xs: "40px" }}>
+    <Box
+      py={{ lg: "80px", md: "60px", xs: "40px" }}
+      maxWidth="1200px"
+      margin="auto"
+    >
       <Title title="Teacher Su in Numbers" />
       <Grid container pt={{ lg: "40px", md: "30px", xs: "20px" }}>
         <Grid item lg={4} md={4} sm={4} xs={4} px={{ sm: 2, xs: 1 }}>
