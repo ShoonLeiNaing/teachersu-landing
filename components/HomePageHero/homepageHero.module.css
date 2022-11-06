@@ -1,0 +1,50 @@
+/* crops animations that exceeds one line area */
+.hero_image {
+  width: 100vw;
+}
+.lineUp {
+  animation: 4.1s anim-lineUp ease-out infinite;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: translateY(-20%);
+  }
+}
+
+/* .line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+} */
+
+@media screen and (max-width: 600px) {
+  .gif {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .gif {
+    width: 80px;
+  }
+}
