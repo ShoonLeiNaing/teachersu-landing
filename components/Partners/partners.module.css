@@ -5,3 +5,12 @@
 .image:hover {
   filter: grayscale(0);
 }
+
+@media screen and (max-width: 900px) {
+  .image {
+    filter: unset;
+  }
+  .image:hover {
+    filter: unset;
+  }
+}
