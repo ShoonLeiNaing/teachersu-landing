@@ -1,9 +1,9 @@
 export const navbarData = [
-  { title: "Home", link: "#" },
-  { title: "Courses", link: "#" },
-  { title: "Hall of fame", link: "#" },
-  { title: "About Us", link: "#" },
-  { title: "Contact Us", link: "#" },
+  { title: "Home", link: "/" },
+  { title: "Courses", link: "/" },
+  { title: "Hall of fame", link: "/" },
+  { title: "About Us", link: "/about-us" },
+  { title: "Contact Us", link: "/contact-us" },
 ];
 
 export const whyTrSu = [
@@ -84,4 +84,23 @@ export const partnership = [
   { image: "/images/cambridge.png" },
   { image: "/images/bc.png" },
   { image: "/images/IELTS.png" },
+];
+
+export const mission = [
+  {
+    title: "Our Mission",
+    image: "/images/mission.svg",
+    description: [
+      "To generate a passion and enthusiasm for learning",
+      "To provide excellent educational opportunities to all students through outstanding educational practices",
+      "To nurture holistic development of all students",
+    ],
+  },
+  {
+    title: "Our Vision",
+    image: "/images/vision.svg",
+    description: [
+      "To nurture multi-talented and competent future leaders who can make differences and responsible contributions to both local and global communities.",
+    ],
+  },
 ];
