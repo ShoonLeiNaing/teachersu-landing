@@ -1,26 +1,27 @@
 import { Box, Typography } from "@mui/material";
-import { ChangeEvent, FunctionComponent, useState } from "react";
+import { FunctionComponent, useState } from "react";
 import { colors } from "../../data/colors";
 import { FiMenu } from "react-icons/fi";
+import { FaFacebookMessenger } from "react-icons/fa";
+import { IoCall } from "react-icons/io5";
 import { MdOutlineClose } from "react-icons/md";
 import Image from "next/image";
-import SearchInput from "../SearchInput";
-import { useRouter } from "next/router";
-import styles from "./navbar.module.css";
+// import SearchInput from "../SearchInput";
+// import styles from "./navbar.module.css";
 import { navbarData } from "../../data/data";
 import Contact from "./Contact";
+import Link from "next/link";
 
 const Navbar: FunctionComponent = () => {
-  const router = useRouter();
-  const [language, setLanguage] = useState<string>(router.locale || "en");
+  // const [language, setLanguage] = useState<string>(router.locale || "en");
   const [open, setOpen] = useState<boolean>(false);
 
-  const changeLanguageHandler = (e: ChangeEvent<HTMLSelectElement>) => {
-    setLanguage(e.target.value);
-    router.push(router.pathname, router.pathname, {
-      locale: e.target.value,
-    });
-  };
+  // const changeLanguageHandler = (e: ChangeEvent<HTMLSelectElement>) => {
+  //   setLanguage(e.target.value);
+  //   router.push(router.pathname, router.pathname, {
+  //     locale: e.target.value,
+  //   });
+  // };
   return (
     <Box
       position="sticky"
@@ -83,11 +84,29 @@ const Navbar: FunctionComponent = () => {
         <Box
           display="flex"
           alignItems="center"
-          gap={{ md: 2 }}
+          gap={{ md: 4, sm: 2, xs: 2 }}
           // sx={{ float: "right" }}
           // top={0}
         >
-          <Box display={{ md: "block", xs: "none" }}>
+          <Box display="flex" alignItems="center" gap={1} color={colors.blue}>
+            <FaFacebookMessenger fontSize="22px" />
+            <Typography
+              fontSize={{ md: "16px", xs: "14px" }}
+              display={{ sm: "block", xs: "none" }}
+            >
+              Chat
+            </Typography>
+          </Box>
+          <Box display="flex" alignItems="center" gap={1} color={colors.blue}>
+            <IoCall fontSize="22px" />
+            <Typography
+              fontSize={{ md: "16px", xs: "14px" }}
+              display={{ sm: "block", xs: "none" }}
+            >
+              Call
+            </Typography>
+          </Box>
+          {/* <Box display={{ md: "block", xs: "none" }}>
             <SearchInput />
           </Box>
           <Box>
@@ -99,7 +118,7 @@ const Navbar: FunctionComponent = () => {
               <option value="en">Eng</option>
               <option value="my">မြန်မာ</option>
             </select>
-          </Box>
+          </Box> */}
         </Box>
       </Box>
       {open && (
@@ -119,14 +138,15 @@ const Navbar: FunctionComponent = () => {
             gap={4}
           >
             {navbarData?.map((item) => (
-              <Typography
-                sx={{ ":hover": { color: colors.red } }}
-                fontSize={{ md: "18px", xs: "16px" }}
-                key={item.title}
-                className="pointer"
-              >
-                {item.title}
-              </Typography>
+              <Link href={item.link} key={item.title}>
+                <Typography
+                  sx={{ ":hover": { color: colors.red } }}
+                  fontSize={{ md: "18px", xs: "16px" }}
+                  className="pointer"
+                >
+                  {item.title}
+                </Typography>
+              </Link>
             ))}
           </Box>
           <Contact />
