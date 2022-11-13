@@ -1,0 +1,41 @@
+.list {
+  padding: 5px 25px;
+}
+
+.image {
+  width: 100%;
+  height: 115px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .list {
+    padding: 0px 20px;
+  }
+  .image {
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .list li {
+    font-size: 14px;
+  }
+  .image {
+    height: 80px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* .list {
+    margin: 0px;
+    padding: auto;
+  } */
+
+  .list li {
+    font-size: 13px;
+  }
+  .image {
+    height: 75px;
+    margin-bottom: 6px;
+  }
+}

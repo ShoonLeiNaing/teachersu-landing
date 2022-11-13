@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import Title from "../Title";
 import Mission from "../Mission/Mission";
 import Roadmap from "../Roadmap";
+import CEOandFounder from "../CEOandFounder";
 
 const AboutUs = () => {
   return (
@@ -29,6 +30,7 @@ const AboutUs = () => {
         attending Teacher Su International School from all over the nation.
       </Typography>
       <Mission />
+      <CEOandFounder />
       <Roadmap />
     </Box>
   );
