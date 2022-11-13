@@ -104,3 +104,52 @@ export const mission = [
     ],
   },
 ];
+
+export const internationalSchs1 = [
+  {
+    title: "Cambridge Primary",
+    image: "/images/books.svg",
+  },
+  {
+    title: "Secondary <br/>(Pre IGCSE & IGCSE)",
+    image: "/images/bookshelf.svg",
+  },
+  {
+    title: "Olympid Maths Class <br/>(Pre IGCSE & IGCSE)",
+    image: "/images/medal.svg",
+  },
+];
+
+export const internationalSchs2 = [
+  {
+    title: "Cambridge Primary<br/> English Class",
+    image: "/images/textbook.svg",
+  },
+  {
+    title: "Cambridge Primary <br/> Maths Class",
+    image: "/images/calculator.svg",
+  },
+  {
+    title: "Cambridge Primary<br/>Science Class",
+    image: "/images/physics.svg",
+  },
+];
+
+export const grammerClasses = ["Starters", "Movers", "Flyers", "KET", "PET"];
+export const youngLearners1 = ["Starters", "Movers", "Flyers", "KET"];
+export const youngLearners2 = ["Starters", "Movers", "Flyers", "KET"];
+
+export const adultLearners = [
+  {
+    title: "IELTS Premium Class",
+    image: "/images/ieltslogo.png",
+  },
+  {
+    title: "Duolingo Foundation Class",
+    image: "/images/duolingo.png",
+  },
+  {
+    title: "Survival English Class for Parents",
+    image: "/images/parent.png",
+  },
+];
