@@ -11,6 +11,7 @@ import {
 import { colors } from "../../data/colors";
 import styles from "./footer.module.css";
 import { navbarData } from "../../data/data";
+import Link from "next/link";
 // import Image from "next/image";
 
 const Footer: FunctionComponent = () => {
@@ -68,9 +69,9 @@ const Footer: FunctionComponent = () => {
                 </Typography>
 
                 {navbarData?.map((item) => (
-                  <Typography key={item.title} fontSize="14px">
-                    {item.title}
-                  </Typography>
+                  <Link href={item.link} key={item.title}>
+                    <Typography fontSize="14px">{item.title}</Typography>
+                  </Link>
                 ))}
               </Box>
             </Grid>

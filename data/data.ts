@@ -1,7 +1,7 @@
 export const navbarData = [
   { title: "Home", link: "/" },
-  { title: "Courses", link: "/" },
-  { title: "Hall of fame", link: "/" },
+  { title: "Courses", link: "/courses" },
+  { title: "Hall of fame", link: "/hall-of-fame" },
   { title: "About Us", link: "/about-us" },
   { title: "Contact Us", link: "/contact-us" },
 ];

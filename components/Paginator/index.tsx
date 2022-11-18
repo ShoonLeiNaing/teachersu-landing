@@ -73,6 +73,9 @@ const Paginator: FunctionComponent<IProps> = ({
               "&:hover": {
                 backgroundColor: "#436FAE",
               },
+              "&:disabled": {
+                backgroundColor: "grey",
+              },
             }}
             onClick={() => {
               if (page !== 1) {
@@ -89,13 +92,16 @@ const Paginator: FunctionComponent<IProps> = ({
               "&:hover": {
                 backgroundColor: "#436FAE",
               },
+              "&:disabled": {
+                backgroundColor: "grey",
+              },
             }}
             onClick={() => {
               if (page !== totalPages && totalPages !== undefined) {
                 setPage(page + 1);
               }
             }}
-            // disabled={page === totalPages || totalPages === undefined}
+            disabled={page === totalPages || totalPages === undefined}
           >
             <MdOutlineKeyboardArrowRight color="white" fontSize="20px" />
           </IconButton>

@@ -77,9 +77,11 @@ const Navbar: FunctionComponent = () => {
           left="50%"
           sx={{ transform: "translate(-50%,0%)" }}
         >
-          <Box width={{ md: "240px", sm: "180px", xs: "150px" }}>
-            <Image alt="logo" src="/images/logo-lg.svg" fill />
-          </Box>
+          <Link href="/">
+            <Box width={{ md: "240px", sm: "180px", xs: "150px" }}>
+              <Image alt="logo" src="/images/logo-lg.svg" fill />
+            </Box>
+          </Link>
         </Box>
         <Box
           display="flex"
