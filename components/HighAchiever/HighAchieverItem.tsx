@@ -23,7 +23,7 @@ const HighAchieverItem: FunctionComponent<IProps> = ({ data }) => {
         <Box pl={{ md: "50px", sm: "40px", xs: "20px" }}>
           <Box
             position="relative"
-            height={{ md: "150px", sm: "130px", xs: "90px" }}
+            height={{ md: "140px", sm: "120px", xs: "80px" }}
             width={{ md: "150px", sm: "130px", xs: "90px" }}
           >
             <Image src={data.image} fill alt={data.name} />

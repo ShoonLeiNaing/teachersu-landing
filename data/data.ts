@@ -156,7 +156,7 @@ export const adultLearners = [
 
 export const highAchievers = [
   {
-    image: "/images/highachiever1.svg",
+    image: "/images/highachiever1.png",
     name: "Kenna",
     listening: "7",
     reading: "7.5",
@@ -165,7 +165,7 @@ export const highAchievers = [
     overall: "8",
   },
   {
-    image: "/images/highachiever1.svg",
+    image: "/images/highachiever1.png",
     name: "Kenna",
     listening: "7",
     reading: "7.5",
