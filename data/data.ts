@@ -153,3 +153,185 @@ export const adultLearners = [
     image: "/images/parent.png",
   },
 ];
+
+export const highAchievers = [
+  {
+    image: "/images/highachiever1.svg",
+    name: "Kenna",
+    listening: "7",
+    reading: "7.5",
+    writing: "7",
+    speaking: "7.5",
+    overall: "8",
+  },
+  {
+    image: "/images/highachiever1.svg",
+    name: "Kenna",
+    listening: "7",
+    reading: "7.5",
+    writing: "7",
+    speaking: "7.5",
+    overall: "8",
+  },
+];
+
+export const achieverNumbers = [
+  {
+    title: "IELTS achievers",
+    number: "170",
+    image: "/images/achievement1.svg",
+  },
+  {
+    title: "Duolingo achievers",
+    number: "70",
+    image: "/images/achievement2.svg",
+  },
+  {
+    title: "YLE achievers",
+    number: "5200",
+    image: "/images/achievement3.svg",
+  },
+  {
+    title: "Olympid maths achievers",
+    number: "170",
+    image: "/images/achievement4.svg",
+  },
+];
+
+export const IELTSAchievers = [
+  {
+    image: "/images/avatar.png",
+    name: "Kenna",
+    scores: [
+      { Listening: "7" },
+      { Reading: "7.5" },
+      { Writing: "7" },
+      { Speaking: "7.5" },
+    ],
+    overall: "Overall Band 8",
+  },
+  {
+    image: "/images/avatar.png",
+    name: "Kenna",
+    scores: [
+      { Listening: "7" },
+      { Reading: "7.5" },
+      { Writing: "7" },
+      { Speaking: "7.5" },
+    ],
+    overall: "Overall Band 8",
+  },
+  {
+    image: "/images/avatar.png",
+    name: "Kenna",
+    scores: [
+      { Listening: "7" },
+      { Reading: "7.5" },
+      { Writing: "7" },
+      { Speaking: "7.5" },
+    ],
+    overall: "Overall Band 8",
+  },
+  {
+    image: "/images/avatar.png",
+    name: "Kenna",
+    scores: [
+      { Listening: "7" },
+      { Reading: "7.5" },
+      { Writing: "7" },
+      { Speaking: "7.5" },
+    ],
+    overall: "Overall Band 8",
+  },
+  {
+    image: "/images/avatar.png",
+    name: "Kenna",
+    scores: [
+      { Listening: "7" },
+      { Reading: "7.5" },
+      { Writing: "7" },
+      { Speaking: "7.5" },
+    ],
+    overall: "Overall Band 8",
+  },
+  {
+    image: "/images/avatar.png",
+    name: "Kenna",
+    scores: [
+      { Listening: "7" },
+      { Reading: "7.5" },
+      { Writing: "7" },
+      { Speaking: "7.5" },
+    ],
+    overall: "Overall Band 8",
+  },
+];
+
+export const DuolingoAchieversData = [
+  {
+    image: "/images/avatar.png",
+    name: "Kenna",
+    scores: [
+      { Literacy: "155" },
+      { Conversation: "145" },
+      { Comprehension: "150" },
+      { Production: "155" },
+    ],
+    overall: "Overall score  150",
+  },
+  {
+    image: "/images/avatar.png",
+    name: "Kenna",
+    scores: [
+      { Literacy: "155" },
+      { Conversation: "145" },
+      { Comprehension: "150" },
+      { Production: "155" },
+    ],
+    overall: "Overall score  150",
+  },
+  {
+    image: "/images/avatar.png",
+    name: "Kenna",
+    scores: [
+      { Literacy: "155" },
+      { Conversation: "145" },
+      { Comprehension: "150" },
+      { Production: "155" },
+    ],
+    overall: "Overall score  150",
+  },
+  {
+    image: "/images/avatar.png",
+    name: "Kenna",
+    scores: [
+      { Literacy: "155" },
+      { Conversation: "145" },
+      { Comprehension: "150" },
+      { Production: "155" },
+    ],
+    overall: "Overall score  150",
+  },
+  {
+    image: "/images/avatar.png",
+    name: "Kenna",
+    scores: [
+      { Literacy: "155" },
+      { Conversation: "145" },
+      { Comprehension: "150" },
+      { Production: "155" },
+    ],
+    overall: "Overall score  150",
+  },
+  {
+    image: "/images/avatar.png",
+    name: "Kenna",
+    scores: [
+      { Literacy: "155" },
+      { Conversation: "145" },
+      { Comprehension: "150" },
+      { Production: "155" },
+    ],
+    overall: "Overall score  150",
+  },
+];
