@@ -51,7 +51,7 @@ const Paginator: FunctionComponent<IProps> = ({
             borderRadius="10px"
             // p="3px"
             marginX={1}
-            zIndex={1000}
+            // zIndex={1000}
             height="30px"
           >
             <input
@@ -66,7 +66,7 @@ const Paginator: FunctionComponent<IProps> = ({
           </Box>
           of {totalPages}
         </Box>
-        <Box display="flex" gap={1} zIndex={1000} ml={2}>
+        <Box display="flex" gap={1} ml={2}>
           <IconButton
             sx={{
               backgroundColor: colors.blue,
