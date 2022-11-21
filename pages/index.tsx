@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import AnimatedHero from "../components/AnimatedHero";
 
 const Layout = dynamic(import("../components/Layout"), { ssr: false });
 const Numbers = dynamic(import("../components/Numbers"), { ssr: false });
@@ -17,6 +18,7 @@ const WhyChooseTrSu = dynamic(import("../components/WhyChooseTrSu"), {
 export default function Home() {
   return (
     <Layout>
+      <AnimatedHero />
       <HomePageHero />
       <Numbers />
       <SuConnect />

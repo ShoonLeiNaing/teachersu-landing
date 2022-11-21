@@ -27,7 +27,8 @@ const AnimatedText = () => {
       height="100%"
       justifyContent="center"
       //   width="100%"
-      py={{ md: "80px", xs: "40px" }}
+      py={{ md: 4, xs: 0 }}
+      pb={{ md: 0, sm: 2, xs: 2 }}
       px={{ sm: 0, xs: 1 }}
     >
       <Box mr={{ lg: 4, md: 4, sm: 2, xs: 1 }}>
