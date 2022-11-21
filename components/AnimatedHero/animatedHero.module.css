@@ -3,7 +3,7 @@
 }
 .hero_image {
   /* width: 100%; */
-  animation: 3s anim-image ease-out infinite;
+  /* animation: 5s anim-image ease-out infinite; */
   height: 100%;
   z-index: 900;
 }
@@ -11,7 +11,7 @@
   margin-top: -20%;
   width: 600px;
   /* transition: opacity 2s ease-in; */
-  animation: 3s anim-lineUp ease-out infinite;
+  animation: 4.1s anim-lineUp ease-out infinite;
   z-index: 950;
 }
 .heroSentence {
@@ -172,6 +172,10 @@
   }
   70% {
     opacity: 1;
+    transform: translateY(0%);
+  }
+  90% {
+    opacity: 0;
     transform: translateY(0%);
   }
 

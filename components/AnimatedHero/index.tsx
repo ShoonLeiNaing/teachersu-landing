@@ -27,7 +27,7 @@ const AnimatedHero = () => {
       setProgress((prevProgress) =>
         prevProgress >= 100 ? 0 : prevProgress + 10
       );
-    }, 290);
+    }, 400);
     return () => {
       clearInterval(timer);
     };
@@ -41,7 +41,7 @@ const AnimatedHero = () => {
       }
       setIndex(next);
       setProgress(0);
-    }, 3 * 1000);
+    }, 4.1 * 1000);
     console.log(index);
   }, [index, setIndex]);
   return (
