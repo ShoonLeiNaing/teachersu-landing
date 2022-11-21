@@ -1,0 +1,180 @@
+.heroIcon {
+  font-size: 38px;
+}
+.hero_image {
+  /* width: 100%; */
+  animation: 3s anim-image ease-out infinite;
+  height: 100%;
+  z-index: 900;
+}
+.heroText {
+  margin-top: -90px;
+  width: 700px;
+  /* animation: 3s anim-lineUp ease-out infinite; */
+  z-index: 950;
+}
+.heroSentence {
+  font-size: 36px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .heroText {
+    margin-top: -100px;
+    width: 600px;
+  }
+  .hero_image {
+    height: 500px;
+  }
+  .heroSentence {
+    font-size: 32px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .hero_image {
+    height: 400px;
+  }
+  .heroText {
+    width: 500px;
+  }
+  .heroSentence {
+    font-size: 28px !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .heroText {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .heroIcon {
+    font-size: 26px;
+  }
+  .heroText {
+    margin-top: -70px;
+    width: 450px;
+  }
+  .hero_image {
+    height: 350px;
+  }
+  .heroSentence {
+    font-size: 24px !important;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .text {
+    font-size: 20px;
+  }
+  .heroText {
+    margin-top: -70px;
+    width: 380px;
+  }
+  .hero_image {
+    height: 300px;
+  }
+  .heroSentence {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .text {
+    font-size: 20px;
+  }
+  .heroText {
+    margin-top: -80px;
+  }
+  .hero_image {
+    height: 250px;
+  }
+  .heroSentence {
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heroIcon {
+    font-size: 20px;
+  }
+  .heroText {
+    margin-top: -70px;
+    width: 50vw;
+  }
+  .hero_image {
+    height: 230px;
+  }
+  .heroSentence {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heroText {
+    margin-top: -50px;
+    width: 55vw;
+  }
+  .hero_image {
+    height: 200px;
+  }
+  .heroSentence {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .heroText {
+    margin-top: -70px;
+    width: 55vw;
+  }
+  .hero_image {
+    height: 150px;
+  }
+  .heroSentence {
+    font-size: 14px !important;
+  }
+}
+
+@keyframes anim-image {
+  0% {
+    transform: scale(0.9);
+  }
+  /* 25% {
+    transform: scale(0.95);
+  } */
+  50% {
+    transform: scale(1);
+  }
+  /* 75% {
+    transform: scale(0.95);
+  } */
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: translateY(0%);
+  }
+}

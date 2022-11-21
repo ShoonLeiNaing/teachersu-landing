@@ -1,10 +1,24 @@
 import { Box } from "@mui/system";
 import dynamic from "next/dynamic";
-import AchievementsInNumbers from "../../components/AchievementsInNumbers";
-import DuolingoAchievers from "../../components/DuolingoAchievers";
-import HighAchiever from "../../components/HighAchiever";
-import IELTSachievers from "../../components/IELTSachievers";
 
+const IELTSachievers = dynamic(import("../../components/IELTSachievers"), {
+  ssr: false,
+});
+const HighAchiever = dynamic(import("../../components/HighAchiever"), {
+  ssr: false,
+});
+const DuolingoAchievers = dynamic(
+  import("../../components/DuolingoAchievers"),
+  {
+    ssr: false,
+  }
+);
+const AchievementsInNumbers = dynamic(
+  import("../../components/AchievementsInNumbers"),
+  {
+    ssr: false,
+  }
+);
 const Layout = dynamic(import("../../components/Layout"), { ssr: false });
 const Hero = dynamic(import("../../components/Hero"), { ssr: false });
 
