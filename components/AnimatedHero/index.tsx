@@ -48,18 +48,21 @@ const AnimatedHero = () => {
     <Box
       display="flex"
       alignItems="center"
-      maxWidth="1250px"
+      maxWidth="1300px"
       margin="auto"
       py={{ lg: 10, md: 6, sm: 4, xs: 4 }}
       height={{ lg: "fit-content" }}
-      px={{ lg: 4, md: 4, sm: 4, xs: 2 }}
+      px={{ lg: 2, md: 4, sm: 4, xs: 2 }}
     >
       <Box flex="0.5" position="relative">
         <Box
           //   marginTop={{ lg: "-16%", md: "-20%" }}
           className={styles.heroText}
           position="absolute"
-          borderLeft={`4px solid ${colors.blue}`}
+          borderLeft={{
+            md: `4px solid ${colors.blue}`,
+            xs: `3px solid ${colors.blue}`,
+          }}
           pl={{ lg: 4, md: 3, xs: 2 }}
         >
           <Typography
