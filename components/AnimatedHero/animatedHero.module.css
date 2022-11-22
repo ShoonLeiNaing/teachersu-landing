@@ -3,15 +3,15 @@
 }
 .hero_image {
   /* width: 100%; */
-  /* animation: 5s anim-image ease-out infinite; */
+  /* animation: 4.1s anim-image ease-out infinite; */
   height: 100%;
   z-index: 900;
 }
 .heroText {
-  margin-top: -20%;
+  margin-top: -25%;
   width: 600px;
   /* transition: opacity 2s ease-in; */
-  animation: 4.1s anim-lineUp ease-out infinite;
+  animation: 5s anim-lineUp ease-out infinite;
   z-index: 950;
 }
 .heroSentence {
@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 1200px) {
   .heroText {
-    margin-top: -100px;
+    margin-top: -120px;
     width: 500px;
   }
   .hero_image {
@@ -53,7 +53,7 @@
     font-size: 26px;
   }
   .heroText {
-    margin-top: -70px;
+    margin-top: -90px;
     width: 400px;
   }
   .hero_image {
@@ -142,39 +142,42 @@
   0% {
     transform: scale(1);
   }
-  /* 25% {
-    transform: scale(0.95);
-  } */
-  50% {
-    transform: scale(0.9);
-  }
-  /* 75% {
-    transform: scale(0.95);
-  } */
-
-  100% {
+  25% {
     transform: scale(1);
   }
+  50% {
+    transform: scale(1);
+  }
+  /* 75% {
+    transform: scale(0.9);
+  } */
+  75% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
 }
 
-@keyframes anim-lineUp {
+/* @keyframes anim-lineUp {
   0% {
     opacity: 0;
-    transform: translateY(50%);
+    transform: translateY(30%);
   }
   20% {
-    opacity: 0;
-    transform: translateY(20%);
-  }
-  50% {
     opacity: 1;
     transform: translateY(0%);
   }
-  70% {
+  40% {
     opacity: 1;
     transform: translateY(0%);
   }
-  90% {
+  60% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  80% {
     opacity: 0;
     transform: translateY(0%);
   }
@@ -183,7 +186,7 @@
     opacity: 0;
     transform: translateY(0%);
   }
-}
+} */
 
 /* @keyframes anim-lineUp {
   0% {
@@ -194,3 +197,27 @@
     opacity: 1;
   }
 } */
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+}

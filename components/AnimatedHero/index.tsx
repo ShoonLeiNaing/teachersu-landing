@@ -27,7 +27,7 @@ const AnimatedHero = () => {
       setProgress((prevProgress) =>
         prevProgress >= 100 ? 0 : prevProgress + 10
       );
-    }, 400);
+    }, 480);
     return () => {
       clearInterval(timer);
     };
@@ -41,7 +41,7 @@ const AnimatedHero = () => {
       }
       setIndex(next);
       setProgress(0);
-    }, 4.1 * 1000);
+    }, 5 * 1000);
     console.log(index);
   }, [index, setIndex]);
   return (
@@ -82,9 +82,11 @@ const AnimatedHero = () => {
           />
         </Box>
       </Box>
+
       <Box flex="0.5">
         <img src={imagesData[index]} className={styles.hero_image} alt="hero" />
-        <Box display="flex" justifyContent="center" mt={2} color={colors.blue}>
+
+        <Box display="flex" justifyContent="center" mt={2} color={colors.red}>
           <Typography
             px={{ md: 2, sm: 2, xs: 1 }}
             fontSize={{ md: "18px", sm: "14px", xs: "12px" }}
@@ -100,7 +102,14 @@ const AnimatedHero = () => {
               marginY="auto"
               px={{ lg: 2, xs: 1 }}
             >
-              <LinearProgress variant="determinate" value={progress} />
+              <LinearProgress
+                sx={{
+                  backgroundColor: colors.paleGrey,
+                  ".MuiLinearProgress-bar": { backgroundColor: colors.red },
+                }}
+                variant="determinate"
+                value={progress}
+              />
             </Box>
           )}
           <Typography
@@ -117,7 +126,14 @@ const AnimatedHero = () => {
               marginY="auto"
               px={{ lg: 2, xs: 1 }}
             >
-              <LinearProgress variant="determinate" value={progress} />
+              <LinearProgress
+                sx={{
+                  backgroundColor: colors.paleGrey,
+                  ".MuiLinearProgress-bar": { backgroundColor: colors.red },
+                }}
+                variant="determinate"
+                value={progress}
+              />
             </Box>
           )}
           <Typography
@@ -134,7 +150,14 @@ const AnimatedHero = () => {
               marginY="auto"
               px={{ lg: 2, xs: 1 }}
             >
-              <LinearProgress variant="determinate" value={progress} />
+              <LinearProgress
+                sx={{
+                  backgroundColor: colors.paleGrey,
+                  ".MuiLinearProgress-bar": { backgroundColor: colors.red },
+                }}
+                variant="determinate"
+                value={progress}
+              />
             </Box>
           )}
           <Typography
@@ -151,7 +174,14 @@ const AnimatedHero = () => {
               marginY="auto"
               px={{ lg: 2, xs: 1 }}
             >
-              <LinearProgress variant="determinate" value={progress} />
+              <LinearProgress
+                sx={{
+                  backgroundColor: colors.paleGrey,
+                  ".MuiLinearProgress-bar": { backgroundColor: colors.red },
+                }}
+                variant="determinate"
+                value={progress}
+              />
             </Box>
           )}
         </Box>
